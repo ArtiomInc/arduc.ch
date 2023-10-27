@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Satoshi;
+  src: url(/src/assets/Fonts/Satoshi-Variable.ttf);
+}
+
+@font-face {
+  font-family: CabinetGrotesk;
+  src: url(/src/assets/Fonts/CabinetGrotesk-Variable.ttf);
+}
+
+*,
+::before,
+::after {
+  font-family: Satoshi;
+  color: var(--accessible);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: CabinetGrotesk;
+  font-weight: 800;
+}
+
+:root {
+  --background: #121b17;
+  --interactive: #113b29;
+  --border: #28684a;
+  --solid: #33b074;
+  --accessible: #b1f1cb;
+}
+
+@layer components {
+  h1 {
+    @apply font-extrabold text-8xl;
+  }
+  h2 {
+    @apply text-center font-extrabold text-4xl mb-3;
+  }
+  h3 {
+    @apply text-center font-extrabold text-3xl;
+  }
+  .btn {
+    @apply mx-1 px-3 py-2 bg-[var(--solid)] rounded-xl hover:bg-[var(--border)];
+  }
+}
+
+body.menu-open {
+  overflow: hidden;
+}
