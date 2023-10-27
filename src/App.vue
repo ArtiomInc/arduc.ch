@@ -597,7 +597,7 @@ const closeMenu = () => {
     id="footer"
     class="w-full my-16 mt-28 flex flex-col gap-3 items-center"
   >
-    <div class="overflow-hidden" style="width: 165px">
+    <div class="overflow-hidden" style="width: 155px">
       <div class="animate-rollbounce">
         <svg
           style="position: relative; max-width: unset; width: 180px"
