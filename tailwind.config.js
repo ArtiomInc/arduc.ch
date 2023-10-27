@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       animation: {
-        appear: 'appear 3s ease',
+        rollbounce: 'roll 1.5s linear infinite',
       },
       keyframes: {
-        appear: {
-          '0%': { transform: 'translateX(-10px)', opacity: '0' },
-          '100%': { transform: 'translateX(10px)', opacity: '1' },
+        roll: {
+          '0%': { transform: 'translateX(-23px)' },
+          '100%': { transform: 'translateX(0px)' },
         },
       },
     },
