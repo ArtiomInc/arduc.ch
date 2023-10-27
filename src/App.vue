@@ -368,6 +368,30 @@ const closeMenu = () => {
                 d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
               /></svg
           ></a>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-0.5 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/vue.png"
+                alt="VueJS"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">VueJS</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-1 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/typescript.png"
+                alt="Typescript"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">Typescript</p>
+            </div>
+          </div>
         </div>
         <div
           v-motion-slide-visible-once-bottom
@@ -397,6 +421,63 @@ const closeMenu = () => {
                 d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
               /></svg
           ></a>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/electronjs.png"
+                alt="ElectronJS"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">ElectronJS</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-0.5 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/vue.png"
+                alt="VueJS"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">VueJS</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-1 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/typescript.png"
+                alt="Typescript"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">Typescript</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/tailwindcss.png"
+                alt="TailwindCSS"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">TailwindCSS</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/nodejs.png"
+                alt="NodeJS"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">NodeJS</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

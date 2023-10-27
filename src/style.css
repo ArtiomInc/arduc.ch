@@ -32,6 +32,7 @@ h5 {
   --interactive: #113b29;
   --border: #28684a;
   --solid: #33b074;
+  --contain: #3dd68c;
   --accessible: #b1f1cb;
 }
 
@@ -49,7 +50,7 @@ h5 {
     @apply text-center font-medium text-lg;
   }
   .btn {
-    @apply mx-1 px-3 py-2 bg-[var(--solid)] rounded-xl hover:bg-[var(--border)];
+    @apply mx-1 px-3 py-2 bg-[var(--solid)] rounded-xl hover:bg-[var(--border)] text-[var(--background)] font-bold;
   }
 }
 
