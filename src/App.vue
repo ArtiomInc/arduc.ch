@@ -18,119 +18,52 @@ const closeMenu = () => {
 <template>
   <section
     id=""
-    class="w-full h-screen relative flex md:justify-between gap-8 md:gap-0 justify-center items-center flex-col md:flex-row-reverse"
+    class="w-full min-h-screen flex flex-col justify-between items-center"
   >
-    <div class="">
+    <div class="w-full flex justify-end p-3">
+      <div class="cursor-pointer" @click="openMenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -960 960 960"
+          width="40"
+          height="40"
+          fill="#b1f1cb"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4 md:flex-row-reverse items-center">
       <img
-        class="w-[18vh] md:w-[300px] h-full object-cover rounded-full"
+        class="w-[250px] md:w-[350px] h-full mx-auto object-cover rounded-full"
         src="/src/assets/images/artiom_duc.jpg"
         alt="Artiom Duc"
       />
-    </div>
-    <div>
-      <p class="text-xl">Hey there ! I'm</p>
-      <h1>Artiom Duc</h1>
-      <p class="text-3xl">
-        <strong>Industrial Software Technician.</strong> Explore here my
-        portfolio and innovation lab.
-      </p>
-      <div class="absolute bottom-5 left-0 flex justify-center w-full">
-        <div
-          class="animate-bounce shadow-lg rounded-full flex items-center justify-center"
-        >
-          <svg
-            class="w-10 h-10"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </div>
+      <div>
+        <p class="text-xl">Hey there ! I'm</p>
+        <h1>Artiom Duc</h1>
+        <p class="text-3xl">
+          <strong>Industrial Software Technician.</strong> Explore here my
+          portfolio and innovation lab.
+        </p>
       </div>
     </div>
-    <!--menu for mobile-->
-    <div
-      class="block md:hidden absolute right-0 top-5 cursor-pointer"
-      @click="openMenu"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 -960 960 960"
-        width="40"
-        height="40"
-        fill="#b1f1cb"
-      >
-        <path
-          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-        />
-      </svg>
-    </div>
-    <!--menu for desktop-->
-    <div class="hidden p-5 md:block absolute top-0 left-0 w-full h-24">
-      <ul
-        class="flex gap-6 h-full flex-row justify-end items-center max-w-6xl mx-auto px-3"
-      >
-        <a href="" class="cursor-pointer flex gap-1 items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 -960 960 960"
-            width="24"
-            height="24"
-            fill="#28684a"
-          >
-            <path
-              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
-            />
-          </svg>
-          <h4>Home</h4>
-        </a>
-        <a href="#skills" class="cursor-pointer flex gap-1 items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 -960 960 960"
-            width="24"
-            height="24"
-            fill="#28684a"
-          >
-            <path
-              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
-            />
-          </svg>
-          <h4>Skills</h4>
-        </a>
-        <a href="#projects" class="cursor-pointer flex gap-1 items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 -960 960 960"
-            width="24"
-            height="24"
-            fill="#28684a"
-          >
-            <path
-              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
-            />
-          </svg>
-          <h4>Projects</h4>
-        </a>
-        <a href="#contact" class="cursor-pointer flex gap-1 items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 -960 960 960"
-            width="24"
-            height="24"
-            fill="#28684a"
-          >
-            <path
-              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
-            />
-          </svg>
-          <h4>Contact</h4>
-        </a>
-      </ul>
+    <div class="w-full p-3">
+      <div class="animate-bounce rounded-full flex items-center justify-center">
+        <svg
+          class="w-10 h-10"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
     </div>
   </section>
   <section id="skills" class="w-full my-20 animation-appear">
@@ -343,21 +276,24 @@ const closeMenu = () => {
   <section id="projects" class="w-full my-20 mt-24">
     <div>
       <h2 v-motion-slide-visible-once-bottom class="mb-10">Projects</h2>
-      <div class="flex flex-col sm:flex-row justify-between gap-4">
+      <div class="flex flex-row justify-center flex-wrap gap-4">
         <div
           v-motion-slide-visible-once-bottom
-          class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl"
+          class="w-full max-w-[530px] h-fit bg-[var(--interactive)] p-4 rounded-xl"
         >
-          <h3>Terminal web</h3>
+          <h3>Mini robotic cell</h3>
           <div>
-            This project is an online terminal application that provides a user
-            interface for entering commands and receiving responses in return.
+            A demonstrator showing a pogopin assembly application using an
+            Asycube 50 with EYE+ and a linear axis system. The parts are
+            recirculated by blowing, enabling the demonstrator to operate
+            continuously. The whole system is controlled via EtherCAT fiedbus.
           </div>
           <a
             class="flex items-center gap-1 text-lg font-bold"
-            href="https://term.arduc.ch"
+            href="https://youtu.be/z7kOAKYW_zc?si=XDrSmpjg_xwDvDYV"
             target="_blank"
-            >term.arduc.ch<svg
+            >youtube.com
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               height="20"
               viewBox="0 -960 960 960"
@@ -373,12 +309,23 @@ const closeMenu = () => {
               class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
             >
               <img
+                class="h-4 mx-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/twincat.png"
+                alt="Beckhoff"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">Beckhoff</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
                 class="h-4 ml-0.5 mr-1"
                 style="filter: grayscale(100%) hue-rotate(90deg)"
-                src="/src/assets/images/vue.png"
-                alt="VueJS"
+                src="/src/assets/images/ethercat.png"
+                alt="EtherCAT"
               />
-              <p class="text-[var(--background)] font-bold mr-1">VueJS</p>
+              <p class="text-[var(--background)] font-bold mr-1">EtherCAT</p>
             </div>
             <div
               class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
@@ -386,16 +333,27 @@ const closeMenu = () => {
               <img
                 class="h-4 ml-1 mr-1"
                 style="filter: grayscale(100%) hue-rotate(90deg)"
-                src="/src/assets/images/typescript.png"
-                alt="Typescript"
+                src="/src/assets/images/asyril.png"
+                alt="Asyril"
               />
-              <p class="text-[var(--background)] font-bold mr-1">Typescript</p>
+              <p class="text-[var(--background)] font-bold mr-1">Asyril</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-1 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/solidworks.png"
+                alt="SolidWodks"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">SolidWorks</p>
             </div>
           </div>
         </div>
         <div
           v-motion-slide-visible-once-bottom
-          class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl"
+          class="w-full max-w-[530px] h-fit bg-[var(--interactive)] p-4 rounded-xl"
         >
           <h3>WorkMemo app</h3>
           <div>
@@ -470,12 +428,123 @@ const closeMenu = () => {
               class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
             >
               <img
-                class="h-4 mr-1"
+                class="h-4 ml-0.5 mr-1"
                 style="filter: grayscale(100%) hue-rotate(90deg)"
                 src="/src/assets/images/nodejs.png"
                 alt="NodeJS"
               />
               <p class="text-[var(--background)] font-bold mr-1">NodeJS</p>
+            </div>
+          </div>
+        </div>
+        <div
+          v-motion-slide-visible-once-bottom
+          class="w-full max-w-[530px] h-fit bg-[var(--interactive)] p-4 rounded-xl"
+        >
+          <h3>Asyril Fanuc demonstrator</h3>
+          <div>
+            A demonstrator showing different scenario applications with a Fanuc
+            Scara robot and several Asycube 240 with EYE+ a smart control
+            system.
+          </div>
+          <a
+            class="flex items-center gap-1 text-lg font-bold"
+            href="https://youtu.be/sHExxx6mZWM?si=k_jouMx2vHoKNlKt"
+            target="_blank"
+            >youtube.com
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              viewBox="0 -960 960 960"
+              width="20"
+              fill="#b1f1cb"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+              /></svg
+          ></a>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 mx-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/twincat.png"
+                alt="Beckhoff"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">Beckhoff</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-0.5 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/fanuc.png"
+                alt="Fanuc"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">Fanuc</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-1 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/asyril.png"
+                alt="Asyril"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">Asyril</p>
+            </div>
+          </div>
+        </div>
+        <div
+          v-motion-slide-visible-once-bottom
+          class="w-full max-w-[530px] h-fit bg-[var(--interactive)] p-4 rounded-xl"
+        >
+          <h3>Terminal web</h3>
+          <div>
+            This project is an online terminal application that provides a user
+            interface for entering commands and receiving responses in return.
+          </div>
+          <a
+            class="flex items-center gap-1 text-lg font-bold"
+            href="https://term.arduc.ch"
+            target="_blank"
+            >term.arduc.ch<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              viewBox="0 -960 960 960"
+              width="20"
+              fill="#b1f1cb"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+              /></svg
+          ></a>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-0.5 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/vue.png"
+                alt="VueJS"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">VueJS</p>
+            </div>
+            <div
+              class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+            >
+              <img
+                class="h-4 ml-1 mr-1"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/typescript.png"
+                alt="Typescript"
+              />
+              <p class="text-[var(--background)] font-bold mr-1">Typescript</p>
             </div>
           </div>
         </div>
@@ -485,18 +554,46 @@ const closeMenu = () => {
   <section id="contact" class="w-full my-20 mt-24">
     <div class="text-center">
       <h2 v-motion-slide-visible-once-bottom class="mb-6">Contact</h2>
-      <a href="https://github.com/ArtiomInc" target="_blank" class="btn"
-        >github</a
-      >
-      <a
-        href="https://www.linkedin.com/in/artiom-duc/"
-        target="_blank"
-        class="btn"
-        >linkedin</a
-      >
+      <div v-motion-slide-visible-once-bottom class="flex justify-center gap-3">
+        <a href="https://github.com/ArtiomInc" target="_blank">
+          <div
+            class="bg-[var(--solid)] rounded-full hover:bg-[var(--border)] flex items-center w-fit pl-1.5 pr-2 py-1 gap-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            <p class="text-[var(--background)] font-bold">github</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/artiom-duc/" target="_blank"
+          ><div
+            class="bg-[var(--solid)] rounded-full hover:bg-[var(--border)] flex items-center w-fit px-2 py-1 gap-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+            <p class="text-[var(--background)] font-bold">linkedin</p>
+          </div></a
+        >
+      </div>
     </div>
   </section>
   <footer
+    v-motion-slide-visible-once-bottom
     id="footer"
     class="w-full my-16 mt-28 flex flex-col gap-3 items-center"
   >

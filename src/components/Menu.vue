@@ -18,7 +18,7 @@ function close() {
     class="fixed top-0 left-0 m-0 p-0 w-screen h-screen bg-[var(--interactive)] flex justify-center items-center"
   >
     <div>
-      <ul class="flex flex-col items-center gap-[8vh] text-4xl">
+      <ul class="flex flex-col items-center gap-[8vh] mb-[10vh] text-4xl">
         <div id="close" class="flex cursor-pointer" @click="close">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ function close() {
   }
 }
 
-li::before {
+a::before {
   content: '';
   position: absolute;
   width: 0%;
@@ -89,7 +89,7 @@ li::before {
   transition: width 0.3s ease-out;
 }
 
-li:hover::before {
+a:hover::before {
   width: 100%;
 }
 
