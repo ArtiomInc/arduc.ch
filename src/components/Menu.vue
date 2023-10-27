@@ -32,18 +32,18 @@ function close() {
             />
           </svg>
         </div>
-        <li class="flex cursor-pointer relative">
+        <a href="#home" @click="close" class="flex cursor-pointer relative">
           <p class="z-10">Home</p>
-        </li>
-        <li class="flex cursor-pointer relative">
+        </a>
+        <a href="#skills" @click="close" class="flex cursor-pointer relative">
           <p class="z-10">Skills</p>
-        </li>
-        <li class="flex cursor-pointer relative">
+        </a>
+        <a href="#projects" @click="close" class="flex cursor-pointer relative">
           <p class="z-10">Project</p>
-        </li>
-        <li class="flex cursor-pointer relative">
+        </a>
+        <a href="#contact" @click="close" class="flex cursor-pointer relative">
           <p class="z-10">Contact</p>
-        </li>
+        </a>
       </ul>
     </div>
   </div>

@@ -17,6 +17,7 @@ const closeMenu = () => {
 
 <template>
   <section
+    id="home"
     class="w-full h-screen relative flex md:justify-between gap-14 md:gap-0 justify-center items-center flex-col md:flex-row-reverse"
   >
     <div>
@@ -34,8 +35,9 @@ const closeMenu = () => {
         portfolio and innovation lab.
       </p>
     </div>
+    <!--menu for mobile-->
     <div
-      class="absolute right-0 top-5 md:hidden cursor-pointer"
+      class="block md:hidden absolute right-0 top-5 cursor-pointer"
       @click="openMenu"
     >
       <svg
@@ -50,8 +52,71 @@ const closeMenu = () => {
         />
       </svg>
     </div>
+    <!--menu for desktop-->
+    <div class="hidden p-5 md:block absolute top-0 left-0 w-full h-24">
+      <ul
+        class="flex gap-6 h-full flex-row justify-end items-center max-w-6xl mx-auto px-3"
+      >
+        <a href="#home" class="cursor-pointer flex gap-1 items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            width="24"
+            height="24"
+            fill="#28684a"
+          >
+            <path
+              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
+            />
+          </svg>
+          <h4>Home</h4>
+        </a>
+        <a href="#skills" class="cursor-pointer flex gap-1 items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            width="24"
+            height="24"
+            fill="#28684a"
+          >
+            <path
+              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
+            />
+          </svg>
+          <h4>Skills</h4>
+        </a>
+        <a href="#projects" class="cursor-pointer flex gap-1 items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            width="24"
+            height="24"
+            fill="#28684a"
+          >
+            <path
+              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
+            />
+          </svg>
+          <h4>Projects</h4>
+        </a>
+        <a href="#contact" class="cursor-pointer flex gap-1 items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            width="24"
+            height="24"
+            fill="#28684a"
+          >
+            <path
+              d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"
+            />
+          </svg>
+          <h4>Contact</h4>
+        </a>
+      </ul>
+    </div>
   </section>
-  <section class="w-full my-20">
+  <section id="skills" class="w-full my-20 animation-appear">
     <div>
       <h2>Skills</h2>
       <div class="flex flex-wrap justify-between">
@@ -91,16 +156,30 @@ const closeMenu = () => {
       </div>
     </div>
   </section>
-  <section class="w-full my-20">
+  <section id="projects" class="w-full my-20">
     <div>
       <h2>Projects</h2>
       <div class="flex flex-col sm:flex-row justify-between gap-2">
         <div class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl">
-          <h3>term.arduc.ch</h3>
+          <h3>Terminal web</h3>
           <div>
             This project is an online terminal application that provides a user
             interface for entering commands and receiving responses in return.
           </div>
+          <a
+            class="flex items-center gap-1 text-lg font-bold"
+            href="https://term.arduc.ch"
+            >term.arduc.ch<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              viewBox="0 -960 960 960"
+              width="20"
+              fill="#b1f1cb"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+              /></svg
+          ></a>
         </div>
         <div class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl">
           <h3>WorkMemo app</h3>
@@ -111,18 +190,33 @@ const closeMenu = () => {
             TailwindCSS, and more, it provides a responsive user interface and a
             pleasant experience for users.
           </div>
+          <a
+            class="flex items-center gap-1 text-lg font-bold"
+            href="https://github.com/ArtiomInc/arduc.ch"
+            >github.com
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              viewBox="0 -960 960 960"
+              width="20"
+              fill="#b1f1cb"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+              /></svg
+          ></a>
         </div>
       </div>
     </div>
   </section>
-  <section class="w-full my-20">
+  <section id="contact" class="w-full my-20">
     <div class="text-center">
       <h2>Contact</h2>
       <a href="" class="btn">github</a>
       <a href="" class="btn">linkedin</a>
     </div>
   </section>
-  <footer class="w-full my-16 flex flex-col gap-3 items-center">
+  <footer id="footer" class="w-full my-16 flex flex-col gap-3 items-center">
     <svg
       data-testid="wave-divider"
       style="max-width: unset; width: 180px"
@@ -151,4 +245,38 @@ const closeMenu = () => {
   <Menu v-if="menuDisplay" @close="closeMenu"></Menu>
 </template>
 
-<style scoped></style>
+<style scoped>
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease 0.5s forwards;
+  scroll-timeline: fadein 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@scroll-timeline fadein {
+  start: 0;
+  end: 100%;
+}
+
+@scroll-timeline fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>

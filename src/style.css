@@ -25,7 +25,6 @@ h3,
 h4,
 h5 {
   font-family: CabinetGrotesk;
-  font-weight: 800;
 }
 
 :root {
@@ -45,6 +44,9 @@ h5 {
   }
   h3 {
     @apply text-center font-extrabold text-3xl;
+  }
+  h4 {
+    @apply text-center font-medium text-lg;
   }
   .btn {
     @apply mx-1 px-3 py-2 bg-[var(--solid)] rounded-xl hover:bg-[var(--border)];
