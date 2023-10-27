@@ -17,14 +17,14 @@ const closeMenu = () => {
 
 <template>
   <section
-    id="home"
-    class="w-full h-screen relative flex md:justify-between gap-14 md:gap-0 justify-center items-center flex-col md:flex-row-reverse"
+    id=""
+    class="w-full h-screen relative flex md:justify-between gap-8 md:gap-0 justify-center items-center flex-col md:flex-row-reverse"
   >
-    <div>
+    <div class="">
       <img
-        class="w-[300px] h-full object-cover rounded-full"
+        class="w-[18vh] md:w-[300px] h-full object-cover rounded-full"
         src="/src/assets/images/artiom_duc.jpg"
-        alt=""
+        alt="Artiom Duc"
       />
     </div>
     <div>
@@ -34,6 +34,23 @@ const closeMenu = () => {
         <strong>Industrial Software Technician.</strong> Explore here my
         portfolio and innovation lab.
       </p>
+      <div class="absolute bottom-5 left-0 flex justify-center w-full">
+        <div
+          class="animate-bounce shadow-lg rounded-full flex items-center justify-center"
+        >
+          <svg
+            class="w-10 h-10"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
+      </div>
     </div>
     <!--menu for mobile-->
     <div
@@ -57,7 +74,7 @@ const closeMenu = () => {
       <ul
         class="flex gap-6 h-full flex-row justify-end items-center max-w-6xl mx-auto px-3"
       >
-        <a href="#home" class="cursor-pointer flex gap-1 items-center">
+        <a href="" class="cursor-pointer flex gap-1 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 -960 960 960"
@@ -118,49 +135,219 @@ const closeMenu = () => {
   </section>
   <section id="skills" class="w-full my-20 animation-appear">
     <div>
-      <h2>Skills</h2>
-      <div class="flex flex-wrap justify-between">
-        <div>
-          <h3>Conception</h3>
-          <ul>
-            <li>SolidWorks</li>
-            <li>Inventor Pro</li>
-            <li>Qelectrotech</li>
-            <li>Eplan</li>
+      <h2 v-motion-slide-visible-once-bottom>Skills</h2>
+      <div class="flex flex-wrap justify-center">
+        <div class="px-10 py-4">
+          <h3 v-motion-slide-visible-once-bottom class="text-start mb-2">
+            Conception
+          </h3>
+          <ul class="flex flex-col gap-2">
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%)"
+                src="/src/assets/images/solidworks.png"
+                alt="Solidworks"
+              />
+              <p
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#33b074] to-emerald-700 font-extrabold"
+              >
+                SolidWorks
+              </p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/autodesk.png"
+                alt="Inventor Pro"
+              />
+              <p>Inventor Pro</p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%)"
+                src="/src/assets/images/qelectrotech.png"
+                alt="Qelectrotech"
+              />
+              <p>Qelectrotech</p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-4"
+                style="filter: grayscale(100%)"
+                src="/src/assets/images/eplan.png"
+                alt="Eplan"
+              />
+              <p>Eplan</p>
+            </li>
           </ul>
         </div>
-        <div>
-          <h3>Programmation</h3>
-          <ul>
-            <li>TwinCAT</li>
-            <li>TIA Portal</li>
-            <li>Studio 5000</li>
-            <li>GX Works</li>
+        <div class="px-10 py-4">
+          <h3 v-motion-slide-visible-once-bottom class="text-start mb-2">
+            Programmation
+          </h3>
+          <ul class="flex flex-col gap-2">
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/twincat.png"
+                alt="TwinCAT"
+              />
+              <p
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#33b074] to-emerald-700 font-extrabold"
+              >
+                TwinCAT
+              </p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/tia_portal_v16.jpg"
+                alt="TIA portal V16"
+              />
+              <p>TIA Portal</p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/rockwell.png"
+                alt="Studo 5000"
+              />
+              <p>Studio 5000</p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5 rounded-[2px]"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/gx_works.png"
+                alt="GX Works"
+              />
+              <p>GX Works</p>
+            </li>
           </ul>
         </div>
-        <div>
-          <h3>Frontend</h3>
-          <ul>
-            <li>typescript</li>
-            <li>vue</li>
-            <li>tailwindcss</li>
+        <div class="px-10 py-4">
+          <h3 v-motion-slide-visible-once-bottom class="text-start mb-2">
+            Frontend
+          </h3>
+          <ul class="flex flex-col gap-2">
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/typescript.png"
+                alt="Typescript"
+              />
+              <p>Typescript</p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-4"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/vue.png"
+                alt="Vue"
+              />
+              <p
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#33b074] to-emerald-700 font-extrabold"
+              >
+                Vue
+              </p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1"
+            >
+              <img
+                class="h-3"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/tailwindcss.png"
+                alt="Tailwind"
+              />
+              <p>Tailwind</p>
+            </li>
           </ul>
         </div>
-        <div>
-          <h3>Backend</h3>
-          <ul>
-            <li>python</li>
-            <li>nodejs</li>
+        <div class="px-10 py-4">
+          <h3 v-motion-slide-visible-once-bottom class="text-start mb-2">
+            Backend
+          </h3>
+          <ul class="flex flex-col gap-2">
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/python.png"
+                alt="Python"
+              />
+              <p
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#33b074] to-emerald-700 font-extrabold"
+              >
+                Python
+              </p>
+            </li>
+            <li
+              v-motion-slide-visible-once-bottom
+              class="flex items-center gap-1.5"
+            >
+              <img
+                class="h-5"
+                style="filter: grayscale(100%) hue-rotate(90deg)"
+                src="/src/assets/images/nodejs.png"
+                alt="NodeJS"
+              />
+              <p>NodeJS</p>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <section id="projects" class="w-full my-20">
+  <section id="projects" class="w-full my-20 mt-24">
     <div>
-      <h2>Projects</h2>
-      <div class="flex flex-col sm:flex-row justify-between gap-2">
-        <div class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl">
+      <h2 v-motion-slide-visible-once-bottom class="mb-10">Projects</h2>
+      <div class="flex flex-col sm:flex-row justify-between gap-4">
+        <div
+          v-motion-slide-visible-once-bottom
+          class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl"
+        >
           <h3>Terminal web</h3>
           <div>
             This project is an online terminal application that provides a user
@@ -169,6 +356,7 @@ const closeMenu = () => {
           <a
             class="flex items-center gap-1 text-lg font-bold"
             href="https://term.arduc.ch"
+            target="_blank"
             >term.arduc.ch<svg
               xmlns="http://www.w3.org/2000/svg"
               height="20"
@@ -181,7 +369,10 @@ const closeMenu = () => {
               /></svg
           ></a>
         </div>
-        <div class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl">
+        <div
+          v-motion-slide-visible-once-bottom
+          class="w-full h-fit bg-[var(--interactive)] p-4 rounded-xl"
+        >
           <h3>WorkMemo app</h3>
           <div>
             I have developed a "todo" and note-taking application built on the
@@ -192,7 +383,8 @@ const closeMenu = () => {
           </div>
           <a
             class="flex items-center gap-1 text-lg font-bold"
-            href="https://github.com/ArtiomInc/arduc.ch"
+            href="https://github.com/ArtiomInc/WorkMemo-App"
+            target="_blank"
             >github.com
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -209,14 +401,24 @@ const closeMenu = () => {
       </div>
     </div>
   </section>
-  <section id="contact" class="w-full my-20">
+  <section id="contact" class="w-full my-20 mt-24">
     <div class="text-center">
-      <h2>Contact</h2>
-      <a href="" class="btn">github</a>
-      <a href="" class="btn">linkedin</a>
+      <h2 v-motion-slide-visible-once-bottom class="mb-6">Contact</h2>
+      <a href="https://github.com/ArtiomInc" target="_blank" class="btn"
+        >github</a
+      >
+      <a
+        href="https://www.linkedin.com/in/artiom-duc/"
+        target="_blank"
+        class="btn"
+        >linkedin</a
+      >
     </div>
   </section>
-  <footer id="footer" class="w-full my-16 flex flex-col gap-3 items-center">
+  <footer
+    id="footer"
+    class="w-full my-16 mt-28 flex flex-col gap-3 items-center"
+  >
     <svg
       data-testid="wave-divider"
       style="max-width: unset; width: 180px"
@@ -239,44 +441,10 @@ const closeMenu = () => {
         </clipPath>
       </defs>
     </svg>
-    <div>Designed & Built by Artiom Duc</div>
+    <div>Built by Artiom Duc</div>
     <div>©Copyright 2023 - Artiom Duc</div>
   </footer>
   <Menu v-if="menuDisplay" @close="closeMenu"></Menu>
 </template>
 
-<style scoped>
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease 0.5s forwards;
-  scroll-timeline: fadein 0.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@scroll-timeline fadein {
-  start: 0;
-  end: 100%;
-}
-
-@scroll-timeline fadein {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
+<style scoped></style>

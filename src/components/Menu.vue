@@ -32,7 +32,7 @@ function close() {
             />
           </svg>
         </div>
-        <a href="#home" @click="close" class="flex cursor-pointer relative">
+        <a href="" @click="close" class="flex cursor-pointer relative">
           <p class="z-10">Home</p>
         </a>
         <a href="#skills" @click="close" class="flex cursor-pointer relative">
@@ -81,7 +81,7 @@ function close() {
 li::before {
   content: '';
   position: absolute;
-  width: 0;
+  width: 0%;
   height: 4px;
   bottom: 0;
   left: 0;
