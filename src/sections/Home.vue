@@ -1,7 +1,6 @@
 <template>
   <section
-    id=""
-    class="w-full min-h-screen flex flex-col justify-between items-center"
+    class="relative w-full min-h-screen flex flex-col justify-between items-center"
   >
     <div class="w-full flex justify-end p-3">
       <div
@@ -56,5 +55,58 @@
         </svg>
       </div>
     </div>
+    <div class="absolute -z-10 h-full flex justify-center items-center">
+      <div class="animation-container w-[40vw] h-[40vh]">
+        <div
+          class="test-anim bg-white/10 w-full h-full blur-3xl rounded-full animate-randomX"
+        ></div>
+      </div>
+    </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes randomX {
+  0% {
+    transform: translateX(0vw);
+  }
+  30% {
+    transform: translateX(-20vw);
+  }
+  60% {
+    transform: translateX(20vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes randomY {
+  0% {
+    transform: translateY(0vh);
+  }
+  20% {
+    transform: translateY(-20vh);
+  }
+  80% {
+    transform: translateY(20vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+.animation-container {
+  animation-name: randomY;
+  animation-duration: 10s; /* Set the duration for randomY animation */
+  animation-timing-function: ease-in-out; /* Adjust timing function if needed */
+  animation-iteration-count: infinite; /* Make it repeat infinitely */
+}
+
+.test-anim {
+  animation-name: randomX;
+  animation-duration: 10s; /* Set the duration for randomX animation */
+  animation-timing-function: linear; /* Adjust timing function if needed */
+  animation-iteration-count: infinite; /* Make it repeat infinitely */
+}
+</style>
