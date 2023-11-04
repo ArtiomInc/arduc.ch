@@ -57,15 +57,17 @@ const props = defineProps({
     <div class="mt-2 flex flex-wrap gap-2">
       <div
         v-for="(item, index) in props.technoName"
-        class="flex w-fit items-center px-1 bg-[var(--contain)] rounded-full"
+        class="flex gap-1.5 w-fit items-center px-2 bg-[var(--contain)] rounded-full"
       >
         <img
-          class="h-4 mr-1"
+          class="h-4"
           style="filter: grayscale(100%) hue-rotate(90deg)"
-          :src="'/src/assets/images/' + props.technoImage[index]"
+          :src="'/src/assets/icons/' + props.technoImage[index]"
           :alt="String(item)"
         />
-        <p class="text-[var(--background)] font-bold mr-1">{{ item }}</p>
+        <p class="text-[var(--background)] font-bold" v-if="item != undefined">
+          {{ item }}
+        </p>
       </div>
     </div>
   </div>

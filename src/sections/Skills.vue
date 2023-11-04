@@ -14,15 +14,18 @@ import SkillsName from '../components/SkillsName.vue';
           <ul class="flex flex-col gap-2">
             <SkillsName
               name="SolidWorks"
-              image="solidworks.png"
+              image="solidworks_accessible.svg"
               premium
             ></SkillsName>
-            <SkillsName name="Inventor Pro" image="autodesk.png"></SkillsName>
+            <SkillsName
+              name="Inventor Pro"
+              image="inventor_pro_accessible.svg"
+            ></SkillsName>
             <SkillsName
               name="Qelectrotech"
-              image="qelectrotech.png"
+              image="qelectrotech_accessible.svg"
             ></SkillsName>
-            <SkillsName name="Eplan" image="eplan.png"></SkillsName>
+            <SkillsName name="Eplan" image="eplan_accessible.svg"></SkillsName>
           </ul>
         </div>
         <div class="px-10 py-4">
@@ -30,13 +33,23 @@ import SkillsName from '../components/SkillsName.vue';
             Programmation
           </h3>
           <ul class="flex flex-col gap-2">
-            <SkillsName name="TwinCAT" image="twincat.png" premium></SkillsName>
+            <SkillsName
+              name="TwinCAT"
+              image="twincat_accessible.svg"
+              premium
+            ></SkillsName>
             <SkillsName
               name="TIA Portal"
-              image="tia_portal_v16.jpg"
+              image="tia_portal_accessible.svg"
             ></SkillsName>
-            <SkillsName name="Studio 5000" image="rockwell.png"></SkillsName>
-            <SkillsName name="GX Works" image="gx_works.png"></SkillsName>
+            <SkillsName
+              name="Studio 5000"
+              image="rockwell_accessible.svg"
+            ></SkillsName>
+            <SkillsName
+              name="GX Works"
+              image="gx_works_accessible.svg"
+            ></SkillsName>
           </ul>
         </div>
         <div class="px-10 py-4">
@@ -44,9 +57,19 @@ import SkillsName from '../components/SkillsName.vue';
             Frontend
           </h3>
           <ul class="flex flex-col gap-2">
-            <SkillsName name="Typescript" image="typescript.png"></SkillsName>
-            <SkillsName name="VueJS" image="vue.png" premium></SkillsName>
-            <SkillsName name="TailwindCSS" image="tailwindcss.png"></SkillsName>
+            <SkillsName
+              name="Typescript"
+              image="typescript_accessible.svg"
+            ></SkillsName>
+            <SkillsName
+              name="Vue.js"
+              image="vue_accessible.svg"
+              premium
+            ></SkillsName>
+            <SkillsName
+              name="TailwindCSS"
+              image="tailwind_accessible.svg"
+            ></SkillsName>
           </ul>
         </div>
         <div class="px-10 py-4">
@@ -54,8 +77,15 @@ import SkillsName from '../components/SkillsName.vue';
             Backend
           </h3>
           <ul class="flex flex-col gap-2">
-            <SkillsName name="Python" image="python.png" premium></SkillsName>
-            <SkillsName name="NodeJS" image="nodejs.png"></SkillsName>
+            <SkillsName
+              name="Python"
+              image="python_accessible.svg"
+              premium
+            ></SkillsName>
+            <SkillsName
+              name="NodeJS"
+              image="nodejs_accessible.svg"
+            ></SkillsName>
           </ul>
         </div>
       </div>

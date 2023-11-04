@@ -15,12 +15,12 @@ import ProjectCard from '../components/ProjectCard.vue';
             continuously. The whole system is controlled via EtherCAT fiedbus."
           linkName="youtube.com"
           linkUrl="https://youtu.be/z7kOAKYW_zc?si=XDrSmpjg_xwDvDYV"
-          :technoName="['Beckhoff', 'Ethercat', 'Asyril', 'SolidWorks']"
+          :technoName="[undefined, 'Ethercat', undefined, 'SolidWorks']"
           :technoImage="[
-            'twincat.png',
-            'ethercat.png',
-            'asyril.png',
-            'solidworks.png',
+            'beckhoff_background.svg',
+            'ethercat_background.svg',
+            'asyril_background.svg',
+            'solidworks_background.svg',
           ]"
         ></ProjectCard>
         <ProjectCard
@@ -34,17 +34,17 @@ import ProjectCard from '../components/ProjectCard.vue';
           linkUrl="https://github.com/ArtiomInc/WorkMemo-App"
           :technoName="[
             'ElectronJS',
-            'VueJS',
+            'Vue.js',
             'Typescript',
             'TailwindCSS',
-            'NodejS',
+            'NodeJS',
           ]"
           :technoImage="[
-            'electronjs.png',
-            'vue.png',
-            'typescript.png',
-            'tailwindcss.png',
-            'nodejs.png',
+            'electronjs_background.svg',
+            'vue_background.svg',
+            'typescript_background.svg',
+            'tailwind_background.svg',
+            'nodejs_background.svg',
           ]"
         ></ProjectCard>
         <ProjectCard
@@ -54,8 +54,12 @@ import ProjectCard from '../components/ProjectCard.vue';
             system."
           linkName="youtube.com"
           linkUrl="https://youtu.be/sHExxx6mZWM?si=k_jouMx2vHoKNlKt"
-          :technoName="['Beckhoff', 'Fanuc', 'Asyril']"
-          :technoImage="['twincat.png', 'fanuc.png', 'asyril.png']"
+          :technoName="[undefined, 'Fanuc', 'Asyril']"
+          :technoImage="[
+            'beckhoff_background.svg',
+            'fanuc_background.svg',
+            'asyril_background.svg',
+          ]"
         ></ProjectCard>
         <ProjectCard
           name="Terminal web"
@@ -63,8 +67,8 @@ import ProjectCard from '../components/ProjectCard.vue';
             interface for entering commands and receiving responses in return."
           linkName="term.arduc.ch"
           linkUrl="https://term.arduc.ch"
-          :technoName="['VueJS', 'Typescript']"
-          :technoImage="['vue.png', 'typescript.png']"
+          :technoName="['Vue.js', 'Typescript']"
+          :technoImage="['vue_background.svg', 'typescript_background.svg']"
         ></ProjectCard>
       </div>
     </div>

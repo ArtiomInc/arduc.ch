@@ -21,8 +21,7 @@ const props = defineProps({
   <li v-motion-slide-visible-once-bottom class="flex items-center gap-1.5">
     <img
       class="h-5"
-      style="filter: grayscale(100%)"
-      :src="'/src/assets/images/' + props.image"
+      :src="'/src/assets/icons/' + props.image"
       :alt="props.name"
     />
     <p
