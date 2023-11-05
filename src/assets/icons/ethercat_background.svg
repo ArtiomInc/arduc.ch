@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100%" height="100%" fill="#121b17" viewBox="0 0 1252 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M1252 0L1252 0L1252 500L0 500L0 0L1252 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Icon 512" clip-path="url(#clip_1)">
+    <path d="M474 175L474 97L1047 97L1047 27L1236 177" id="Vector" fill-rule="evenodd" stroke="none" />
+    <path d="M809 207L1236 207L1236 287.5L997.5 287.5L997.5 359.5L809 207Z" id="Vector-2" fill-rule="evenodd" stroke="none" />
+    <path d="M473 207L758 207L757.5 287.5L659 287.5L659.5 478L572 478L572 287.5L473 287.5L473 207Z" id="Vector-3" fill-rule="evenodd" stroke="none" />
+    <path d="M302 479L214 479L295 207L415.5 207L499 478L407 479L390.5 420.5L316.5 420.5L302 479ZM378 356L353.5 263L329 356L378 356Z" id="Vector-4-Subtract" fill-rule="evenodd" stroke="none" />
+    <path d="M212.006 400.005C188.262 477.525 212.407 400.024 188.006 478.004C186.004 482.063 12.72 512.505 12 342.004C11.2799 164.453 204.565 204.155 212.006 212C211.766 282.566 212.006 282.502 212.006 282.502C212.006 282.502 106.983 241.269 102.503 342.004C103.783 444.02 210.15 405.045 212.006 400.005Z" id="Vector-4" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

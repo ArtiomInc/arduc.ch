@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import ProjectCard from '../components/ProjectCard.vue';
+import BeckhoffBackgroundSvg from '../assets/icons/beckhoff_background.svg';
+import EthercatBackgroundSvg from '../assets/icons/ethercat_background.svg';
+import AsyrilBackgroundSvg from '../assets/icons/asyril_background.svg';
+import SolidWorksBackgroundSvg from '../assets/icons/solidworks_background.svg';
+import ElectronJSBackgroundSvg from '../assets/icons/electronjs_background.svg';
+import VueBackgroundSvg from '../assets/icons/vue_background.svg';
+import TypescriptBackgroundSvg from '../assets/icons/typescript_background.svg';
+import TailwindBackgroundSvg from '../assets/icons/tailwind_background.svg';
+import NodeJSBackgroundSvg from '../assets/icons/nodejs_background.svg';
+import FanucBackgroundSvg from '../assets/icons/fanuc_background.svg';
 </script>
 
 <template>
@@ -15,13 +25,14 @@ import ProjectCard from '../components/ProjectCard.vue';
             continuously. The whole system is controlled via EtherCAT fiedbus."
           linkName="youtube.com"
           linkUrl="https://youtu.be/z7kOAKYW_zc?si=XDrSmpjg_xwDvDYV"
-          :technoName="[undefined, 'Ethercat', undefined, 'SolidWorks']"
+          :technoName="[undefined, 'EtherCAT', undefined, 'SolidWorks']"
           :technoImage="[
-            'beckhoff_background.svg',
-            'ethercat_background.svg',
-            'asyril_background.svg',
-            'solidworks_background.svg',
+            BeckhoffBackgroundSvg,
+            EthercatBackgroundSvg,
+            AsyrilBackgroundSvg,
+            SolidWorksBackgroundSvg,
           ]"
+          :technoImageHeight="['h-4', 'h-4', 'h-5', 'h-4']"
         ></ProjectCard>
         <ProjectCard
           name="WorkMemo app"
@@ -40,12 +51,13 @@ import ProjectCard from '../components/ProjectCard.vue';
             'NodeJS',
           ]"
           :technoImage="[
-            'electronjs_background.svg',
-            'vue_background.svg',
-            'typescript_background.svg',
-            'tailwind_background.svg',
-            'nodejs_background.svg',
+            ElectronJSBackgroundSvg,
+            VueBackgroundSvg,
+            TypescriptBackgroundSvg,
+            TailwindBackgroundSvg,
+            NodeJSBackgroundSvg,
           ]"
+          :technoImageHeight="['h-4', 'h-4', 'h-4', 'h-4', 'h-4']"
         ></ProjectCard>
         <ProjectCard
           name="Asyril Fanuc demonstrator"
@@ -54,12 +66,13 @@ import ProjectCard from '../components/ProjectCard.vue';
             system."
           linkName="youtube.com"
           linkUrl="https://youtu.be/sHExxx6mZWM?si=k_jouMx2vHoKNlKt"
-          :technoName="[undefined, 'Fanuc', 'Asyril']"
+          :technoName="[undefined, undefined, undefined]"
           :technoImage="[
-            'beckhoff_background.svg',
-            'fanuc_background.svg',
-            'asyril_background.svg',
+            BeckhoffBackgroundSvg,
+            FanucBackgroundSvg,
+            AsyrilBackgroundSvg,
           ]"
+          :technoImageHeight="['h-4', 'h-4', 'h-5']"
         ></ProjectCard>
         <ProjectCard
           name="Terminal web"
@@ -68,7 +81,8 @@ import ProjectCard from '../components/ProjectCard.vue';
           linkName="term.arduc.ch"
           linkUrl="https://term.arduc.ch"
           :technoName="['Vue.js', 'Typescript']"
-          :technoImage="['vue_background.svg', 'typescript_background.svg']"
+          :technoImage="[VueBackgroundSvg, TypescriptBackgroundSvg]"
+          :technoImageHeight="['h-4', 'h-4']"
         ></ProjectCard>
       </div>
     </div>

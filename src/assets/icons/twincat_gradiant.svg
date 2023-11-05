@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="510px" height="510px" viewBox="0 0 510 510" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0.5" x2="0.9691358" y2="0.5" id="gradient_1">
+      <stop offset="0%" stop-color="#33B074" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <path d="M510 0L510 0L510 510L0 510L0 0L510 0Z" id="path_1" />
+    <path d="M119.5 46.9885L494.5 28.9885L305.338 0L0 11.8885L119.5 46.9885Z" id="path_2" />
+    <path d="M121 482L121 36L0 0L0 353L121 482Z" id="path_3" />
+    <path d="M375 0L0 19.97L0 465.97L174.5 434.471C174.5 434.471 174.55 434.996 174.5 377.97C89.25 382.145 41.5 317.095 41.5 239.97C41.5 162.845 85.976 86.9956 174.5 69.4701C174.55 39.995 174.5 40.4701 174.5 40.4701C174.5 40.4701 187.455 40.0101 199.58 40.0101C211.705 40.0101 223 40.4701 223 40.4701L223 80.4701L239 88.4701L261.5 59.9701C261.5 59.9701 273.545 61.7351 292.5 83.9701C311.455 106.205 313 111.47 313 111.47L292.5 140.97L300 164.47L332 162.47C332 162.47 335.175 167.295 335.5 202.47C335.825 237.645 332.5 245.97 332.5 245.97L299.5 249.97L291 274.97L314.5 299.97C314.5 299.97 312.75 305.72 295.5 331.47C278.25 357.22 264.5 366.47 264.5 366.47L239.5 343.47L223.5 351.97L224 393.97C224 393.97 213.618 398.282 200.574 401.97C187.529 405.659 174.52 406.98 174.52 406.98L174.499 434.464L174.995 434.371L375 396.97L375 0Z" id="path_4" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_3">
+      <use xlink:href="#path_3" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_4">
+      <use xlink:href="#path_4" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Frame" clip-path="url(#clip_1)">
+    <path d="M510 0L510 0L510 510L0 510L0 0L510 0Z" id="Frame" fill="none" stroke="none" />
+    <g id="Mask-2-Mask" transform="translate(6.5 8.011475)">
+      <path d="M119.5 46.9885L494.5 28.9885L305.338 0L0 11.8885L119.5 46.9885Z" id="Mask" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#clip_2)">
+        <path d="M-6.5 -8.01147L503.5 -8.01147L503.5 501.989L-6.5 501.989L-6.5 -8.01147Z" id="Mask-2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+    <g id="Mask-3-Mask" transform="translate(0 27)">
+      <path d="M121 482L121 36L0 0L0 353L121 482Z" id="Mask" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#clip_3)">
+        <path d="M0 -27L510 -27L510 483L0 483L0 -27Z" id="Mask-3" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+    <g id="Mask-4-Mask" transform="translate(132 43.03003)">
+      <path d="M375 0L0 19.97L0 465.97L174.5 434.471C174.5 434.471 174.55 434.996 174.5 377.97C89.25 382.145 41.5 317.095 41.5 239.97C41.5 162.845 85.976 86.9956 174.5 69.4701C174.55 39.995 174.5 40.4701 174.5 40.4701C174.5 40.4701 187.455 40.0101 199.58 40.0101C211.705 40.0101 223 40.4701 223 40.4701L223 80.4701L239 88.4701L261.5 59.9701C261.5 59.9701 273.545 61.7351 292.5 83.9701C311.455 106.205 313 111.47 313 111.47L292.5 140.97L300 164.47L332 162.47C332 162.47 335.175 167.295 335.5 202.47C335.825 237.645 332.5 245.97 332.5 245.97L299.5 249.97L291 274.97L314.5 299.97C314.5 299.97 312.75 305.72 295.5 331.47C278.25 357.22 264.5 366.47 264.5 366.47L239.5 343.47L223.5 351.97L224 393.97C224 393.97 213.618 398.282 200.574 401.97C187.529 405.659 174.52 406.98 174.52 406.98L174.499 434.464L174.995 434.371L375 396.97L375 0Z" id="Mask" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#clip_4)">
+        <path d="M-132 -43.03L378 -43.03L378 466.97L-132 466.97L-132 -43.03Z" id="Mask-4" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

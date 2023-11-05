@@ -1,32 +1,15 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 
-const props = defineProps({
-  name: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  linkName: {
-    type: String,
-    required: false,
-  },
-  linkUrl: {
-    type: String,
-    required: false,
-  },
-  technoName: {
-    type: Array,
-    default: () => [],
-  },
-  technoImage: {
-    type: Array,
-    default: () => [],
-  },
-});
+const props = defineProps([
+  'name',
+  'description',
+  'linkName',
+  'linkUrl',
+  'technoName',
+  'technoImage',
+  'technoImageHeight',
+]);
 </script>
 
 <template>
@@ -34,15 +17,15 @@ const props = defineProps({
     v-motion-slide-visible-once-bottom
     class="w-full max-w-[530px] h-fit bg-[var(--interactive)] p-4 rounded-xl"
   >
-    <h3>{{ name }}</h3>
+    <h3>{{ props.name }}</h3>
     <div>
-      {{ description }}
+      {{ props.description }}
     </div>
     <a
       class="flex items-center gap-1 text-lg font-bold"
       :href="linkUrl"
       target="_blank"
-      >{{ linkName }}
+      >{{ props.linkName }}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="20"
@@ -57,12 +40,11 @@ const props = defineProps({
     <div class="mt-2 flex flex-wrap gap-2">
       <div
         v-for="(item, index) in props.technoName"
-        class="flex gap-1.5 w-fit items-center px-2 bg-[var(--contain)] rounded-full"
+        class="h-6 flex gap-1.5 w-fit items-center px-2 bg-[var(--contain)] rounded-full"
       >
         <img
-          class="h-4"
-          style="filter: grayscale(100%) hue-rotate(90deg)"
-          :src="'/src/assets/icons/' + props.technoImage[index]"
+          :class="technoImageHeight[index] ? technoImageHeight[index] : ''"
+          :src="props.technoImage[index]"
           :alt="String(item)"
         />
         <p class="text-[var(--background)] font-bold" v-if="item != undefined">
