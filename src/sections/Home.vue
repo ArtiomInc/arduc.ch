@@ -56,9 +56,9 @@
       </div>
     </div>
     <div class="absolute -z-10 h-full flex justify-center items-center">
-      <div class="animation-container w-[40vw] h-[40vh]">
+      <div class="animation-container-1 w-[50vw] h-[50vh]">
         <div
-          class="test-anim bg-white/10 w-full h-full blur-3xl rounded-full animate-randomX"
+          class="animation-container-2 antialiased bg-white/10 w-full h-full blur-3xl rounded-full animate-randomX"
         ></div>
       </div>
     </div>
@@ -96,17 +96,17 @@
   }
 }
 
-.animation-container {
+.animation-container-1 {
   animation-name: randomY;
-  animation-duration: 10s; /* Set the duration for randomY animation */
-  animation-timing-function: ease-in-out; /* Adjust timing function if needed */
-  animation-iteration-count: infinite; /* Make it repeat infinitely */
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-.test-anim {
+.animation-container-2 {
   animation-name: randomX;
-  animation-duration: 10s; /* Set the duration for randomX animation */
-  animation-timing-function: linear; /* Adjust timing function if needed */
-  animation-iteration-count: infinite; /* Make it repeat infinitely */
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 </style>
